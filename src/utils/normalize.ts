@@ -1,31 +1,5 @@
 import { IUser, IUserResponseData } from "./types";
 
-// It normalises api response in below format
-/*
-{
-    id1: { 
-        firstName: "alex";
-        lastName: "sahu";
-        phoneNumber: 12344334323;
-        age: 24;
-    },
-    id2: { 
-        firstName: "golu";
-        lastName: "kumar";
-        phoneNumber: 12344334323;
-        age: 24;
-    },
-    id3: { 
-        firstName: "mang";
-        lastName: "thouthang";
-        phoneNumber: 12344334323;
-        age: 24;
-    },
-    ....
-}
-
-*/
-
 export const normalizeData = (
   data: IUserResponseData[]
 ): { [id: string]: IUser } => {
